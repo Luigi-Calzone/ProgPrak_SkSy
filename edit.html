@@ -27,89 +27,26 @@
     
     <!-- Main Container -->
     <div class="container">
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <h3>TU-DO Bearbeiten</h3>
-      <p>Um ein TU-DO zu editieren, kannst du es hier aussuchen oder direkt in der Übersicht auf das <span class="glyphicon glyphicon-edit">clicken.</p>
-      
-      <div class="dropdown">
-      <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">TU-DOs
-        <span class="caret"></span>
-      </button>
-        <ul class="dropdown-menu">
-          <li><a href="#">Eierkuchen machen</a></li>
-          <li><a href="#">In der Hängematte liegen</a></li>
-          <li><a href="#">Schnapspralinen kaufen</a></li>
-          <li><a href="#">Beispielseite mit dem Bootstrap Framework anlegen</a></li>
-        </ul>
-      </div>  
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
+      <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4">TODO bearbeiten</h1>
+        <p class="lead"></p>
+      </div>
+      
+      <form>
+        <div class="form-group">
+          <label for="date">Fälligkeitsdatum</label>
+          <input type="date" class="form-control" id="date" name="date" value="2020-05-12">
+        </div>
+        <div class="form-group">
+          <label for="description">Beschreibung</label>
+          <textarea class="form-control" id="description" name="description" rows="3">Eierkuchen machen</textarea>
+        </div>
+        <div class="form-group">
+          <label for="percentdone">Bereits erledigt</label>
+          <input type="range" class="form-control-range" id="percentdone" name="percentdone" value="70">
+        </div>
+        <button type="submit" class="btn btn-primary">Änderungen speichern</button>
+      </form>
       
       
       <!-- Footer -->
